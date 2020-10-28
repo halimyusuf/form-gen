@@ -1,8 +1,8 @@
-#### To use the FormGenerator component, the ___name and label___ property is important in the object, the name property is used to manage the state of each input field, hence name of each field must be unique to achieve the desired result, FormGenerator ___supports all input types___ that doesn't require an action(button, reset and submit types), input types also supports all attributes which applies to it. ####
+### To use the FormGenerator component, the _name and label_ property is important in the object, the name property is used to manage the state of each input field, hence name of each field must be unique to achieve the desired result, FormGenerator _supports all input types_ that doesn't require an action(button, reset and submit types), input types also supports all attributes which applies to it. ###
 
  ----------
 
-#### FormGenerator also supports form validation, it accepts an array of functions which either ___returns true or form error text___ ####.
+#### FormGenerator also supports form validation(property name --> validations), it accepts an array of functions which either ___returns true or form error text___ ####.
 
 ## Netlify link <https://wizardly-varahamihira-54486e.netlify.app>
 
