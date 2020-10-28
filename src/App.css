@@ -1,38 +1,99 @@
 .App {
-  text-align: center;
+  padding : 5vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+input[type=date], input[type=datetime-local], input[type=email], input[type=month], input[type=number], input[type=password], input[type=range], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week] {
+  border-radius: 5px;
+  height: 30px;
+  width: calc(100% - 10px);
+  font-size: 1.3em;
+  padding: 5px;
+  border: 3px solid lightgray;
+  outline-color: lightblue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+select {
+  border-radius: 5px;
+  height: 50px;
+  width: 100%;
+  font-size: 1.3em;
+  border: 3px solid lightgray;
+  outline-color: lightblue;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.form-label {
+  padding: 5px 0;
+  font-size: 1.3em;
+}
+
+.formUnit {
+  padding-bottom: 14px
+}
+
+.error-field {
+  color: red;
+  padding-left:3px 
+}
+
+.btn-act {
+  margin-top: 10px;
+}
+
+button {
+  background: rgba(0, 0, 200, 0.8);
   color: white;
+  font-size: 1.4em;
+  padding: 10px 7px;
+  border: 1px solid lightblue;
+  border-radius: 10px;
+  outline: none
 }
 
-.App-link {
-  color: #61dafb;
+.form-btn {
+  width: 30%;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover, button:focus {
+  background-color: rgb(0, 0, 200);
+  cursor: pointer;
+}
+
+.form-container {
+  min-width: 250px;
+  max-width: 500px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.disabled {
+  background-color: grey;
+}
+
+.disabled:hover {
+  background-color: grey;
+  cursor: auto;
+}
+
+.code-editor-cont {
+  display: flex;
+  min-width: 50vw;
+  max-width: 95vw;
+}
+
+@media (max-width: 500px) {
+  .code-editor-cont {
+    justify-content: center;
+  } 
+}
+
+.apply-changes {
+  margin-top: 20px;
+}
+
+.apply-changes button {
+  width: 200px;
+  font-size: 1.2em;
 }
